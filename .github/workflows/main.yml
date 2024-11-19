@@ -17,8 +17,9 @@ jobs:
       - name: Build and push Docker image
         run: |
           az acr login --name haritha123
-          docker build -f .github/workflows/Dockerfile -t haritha123.azurecr.io/hello-world-app:v10 .github/workflows
-          docker push haritha123.azurecr.io/hello-world-app:v10
-          docker build -f mongodb/Dockerfile -t haritha123.azurecr.io/hello-world-app:v12 .github/workflows
-          docker push haritha123.azurecr.io/hello-world-app:v12
+          docker build -f .github/workflows/Dockerfile -t haritha123.azurecr.io/hello-world-app:v111 .github/workflows
+          docker push haritha123.azurecr.io/hello-world-app:v111
+          docker build -f mongodb/Dockerfile -t haritha123.azurecr.io/hello-world-app2:v14 .github/workflows
+          docker push haritha123.azurecr.io/hello-world-app2:v14
+          
       
