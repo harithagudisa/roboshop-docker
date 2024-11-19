@@ -5,6 +5,6 @@ WORKDIR /opt/server
 RUN chown -R cart:cart /opt/server
 USER cart
 COPY package.json .
-COPY server.js .
-RUN npm install
-CMD ["node", "server.js"]
+//COPY server.js .
+//RUN npm install
+//CMD ["node", "server.js"]
