@@ -21,5 +21,6 @@ jobs:
           docker push haritha123.azurecr.io/hello-world-app:v111
           docker build -f mongodb/Dockerfile -t haritha123.azurecr.io/hello-world-app2:v14 .github/workflows
           docker push haritha123.azurecr.io/hello-world-app2:v14
-          
+          docker build -f mysql/Dockerfile -t haritha123.azurecr.io/hello-world-app:v13 .github/workflows
+          docker push haritha123.azurecr.io/hello-world-app:v13
       
