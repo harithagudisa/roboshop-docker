@@ -19,4 +19,6 @@ jobs:
           az acr login --name haritha123
           docker build -f .github/workflows/Dockerfile -t haritha123.azurecr.io/hello-world-app:v1 .github/workflows
           docker push haritha123.azurecr.io/hello-world-app:v1
+          docker build -f cart/Dockerfile -t haritha123.azurecr.io/hello-world-app:v2 .github/workflows
+          docker push haritha123.azurecr.io/hello-world-app:v2
       
